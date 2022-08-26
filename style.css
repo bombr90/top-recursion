@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.root {
+  --backgroundColor:whitesmoke;
+  --wrapperColor: lightgray;
+}
+
+#wrapper  {
+  display:flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--wrapperColor);
+  height:1fr;
+  width:1fr;
+}
+
+#fibonacci, 
+#mergeSort  {
+  flex: 1;
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  flex-direction: column;
+  background-color: var(--backgroundColor);
+  align-items: center;
+  box-shadow: 4px 4px 8px lightgray;
+}
+
+input {
+  padding: 6px 12px;
+  flex:1;
+  max-width: 300px;
+  border-radius: 4px;
+  text-align: center;
+}
+label {
+  flex: 1;
+  text-align: center;
+  max-width: 150px;
+  margin: auto;
+}
+
+form {
+  display:flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+button{
+  flex:1;
+  max-width: 150px;
+  flex-wrap: wrap;
+  align-self: stretch;
+  padding: 6px 12px
+}
+
+#fibonacciDisplay,
+#mergeSortDisplay {
+  flex:1;
+  width: 1fr;
+  text-align: center;
+  white-space: pre-wrap;
+  word-break:break-all;
+  overflow:auto;
+  padding: 16px;
+}

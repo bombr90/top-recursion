@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="./ui.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Recursion Project (fibonacci and mergeSort)</title>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="fibonacci">
+        <form action="#" onsubmit="return false;">
+          <label for="fibonacciInput">Fibonacci Array Size:</label>
+          <input name='fibonacciInput' id="fibonacciInput" type='number' min='1' max='30' placeholder="1 - 30" required>
+          <button type="submit" id="fibonacciButton">Generate Array</button>
+        </form>
+        <div id="fibonacciDisplay"></div>
+    </div>
+    <div id="mergeSort">
+      <form action="#" onsubmit="return false;">
+          <label for="mergeSortInput">Enter Array of values:</label>
+          <input name='mergeSortInput' id="mergeSortInput" type='text' placeholder="8, 3, 7, 2, 5, 1, 4, 6" pattern="^\d+(,\d+)*$" required>
+          <button type="submit" id="mergeSortButton">Sort Array</button>
+        </form>
+        <div id="mergeSortDisplay"></div>
+    </div>
+  </div>
+
+</body>
+</html>
